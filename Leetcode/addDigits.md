@@ -1,7 +1,7 @@
 # LC1: Loops
 
 ## Problem Title:
-<a href="">Add Digits</a>
+<a href="https://leetcode.com/problems/add-digits/">Add Digits</a>
 
 ## Problem Summary:
 Given a non-negative integer, repeatedly add all its digits until the result has only one digit. For example, given 38, the process is 3 + 8 = 11, then 1 + 1 = 2. Return the final single-digit result.

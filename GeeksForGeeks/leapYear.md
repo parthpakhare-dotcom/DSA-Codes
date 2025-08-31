@@ -1,4 +1,4 @@
-# GFG1: Leap Year
+# GFG1: Conditional Satenents
 
 ## Problem Title:
 <a href="https://www.geeksforgeeks.org/problems/leap-year0943/1">Leap Year</a>
