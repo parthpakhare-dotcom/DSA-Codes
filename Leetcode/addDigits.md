@@ -14,7 +14,7 @@ while (num){
     num/=10;
 }
 ```  
-But we need to do this until the number obtained is a single digit number, i.e. lower than or equal to 9. Until then, we have to run the above code. Thus, the final cod is:  
+But we need to do this until the number obtained is a single digit number, i.e. lower than or equal to 9. Until then, we have to run the above code. Thus, the final code is:  
 ## Code
 
 ```cpp
