@@ -10,5 +10,7 @@ LC5: numComplement
 
 GFG1: leapYear
 
+
+Others: armstrongNo
 ## **1) Basics: Loops, Number System and Conditional Statements:**
   (LC1, GFG1, LC2, LC3, LC4, LC5)
