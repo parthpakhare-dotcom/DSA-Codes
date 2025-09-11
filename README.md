@@ -6,7 +6,7 @@ LC2: reverseInteger
 LC3: palindromeNumber  
 LC4: powerOf3  
 LC5: numComplement  
-
+LC6: trailingZeros
 
 GFG1: leapYear  
   
@@ -15,4 +15,4 @@ GFG1: leapYear
 VS1:  armstrongNo  
   
 ## **1) Basics: Loops, Number System and Conditional Statements:**
-  (LC1, GFG1, LC2, LC3, LC4, LC5, VS1)
+  (LC1, GFG1, LC2, LC3, LC4, LC5, VS1, LC6)
