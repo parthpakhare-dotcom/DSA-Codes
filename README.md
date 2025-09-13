@@ -7,6 +7,7 @@ LC3: palindromeNumber
 LC4: powerOf3  
 LC5: numComplement  
 LC6: trailingZeros
+LC7: nimGame
 
 GFG1: leapYear  
   
@@ -16,4 +17,4 @@ VS1:  armstrongNo
 VS2: bishopMoves
   
 ## **1) Basics: Loops, Number System and Conditional Statements:**
-  (LC1, GFG1, LC2, LC3, LC4, LC5, VS1, LC6, VS2)
+  (LC1, GFG1, LC2, LC3, LC4, LC5, VS1, LC6, VS2, LC7)
