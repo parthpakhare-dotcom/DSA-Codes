@@ -1,0 +1,60 @@
+# GFG3: Loops
+## Problem Title:
+<a href="https://www.geeksforgeeks.org/problems/missing-number-in-array1416/1?page=1s">Missing Number in Array</a>
+
+## Problem Summary:
+You are given an array `arr` of size `n` that contains distinct integers from the range `[1, n+1]` with exactly one number missing. Your task is to find that missing number.
+
+For example: If `arr = [1, 2, 4, 5]` with `n = 4`, the array should contain numbers from `[1, 2, 3, 4, 5]` but `3` is missing.
+
+## Approach
+This approach uses the **mathematical sum formula** for natural numbers[1]. The key insight is:
+
+1. **Expected Sum**: Sum of first `(n+1)` natural numbers = `(n+1) × (n+2) / 2`[2]
+2. **Actual Sum**: Sum of all elements present in the array
+3. **Missing Number** = Expected Sum - Actual Sum[1]
+
+This works because when we subtract the actual sum from the expected sum, all present numbers cancel out, leaving only the missing number. We have seen something similar in problem <a href="findMissing.md">finding missing number in shuffled array</a>.
+
+## Code
+```cpp
+class Solution {
+  public:
+    long long missingNum(vector<int>& arr) {
+        // code here
+        long long sum=0, total=0, n=arr.size();
+        for (int i=0; i<n; i++){
+            sum+=arr[i];
+        }
+        total= (n+1)*(n+2)/2;
+        return total - sum;
+    }
+};
+```  
+
+
+## Code Explanation
+- `sum` stores the total of all elements present in the array
+- `total` calculates the expected sum of numbers from 1 to (n+1) using the formula `(n+1)×(n+2)/2`
+- The missing number is simply the difference: `total - sum`
+- Uses `long long` to prevent integer overflow for large values[4]
+
+## Complexity Analysis
+- **Time Complexity:** O(n) - single traversal of the array[4]
+- **Space Complexity:** O(1) - only constant extra space used[4]
+
+## Additional Notes
+**Alternative Approach**: The **XOR method** can also solve this problem:
+
+// XOR approach (more robust against overflow)
+```cpp 
+    int xor1 = 0, xor2 = 0;
+    for (int i = 0; i < arr.size(); i++) 
+        xor1 ^= arr[i];
+    for (int i = 1; i <= arr.size() + 1; i++) 
+        xor2 ^= i;
+    return xor1 ^ xor2;
+```  
+
+**Sum Method Advantages**: Simple and intuitive mathematical approach[2]  
+**XOR Method Advantages**: No overflow risk, works with any integer range[4]
