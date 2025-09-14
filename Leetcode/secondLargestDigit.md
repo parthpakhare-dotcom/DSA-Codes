@@ -1,4 +1,4 @@
-# LC7: Loops
+# LC7: Loops and Conditional Statements
 
 ## Problem Title:
 **<a href="https://leetcode.com/problems/second-largest-digit-in-a-string/description/">Second Largest Digit in a String</a>**
